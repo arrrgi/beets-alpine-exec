@@ -17,3 +17,7 @@ jobs:
           include-v-in-tag: false
           skip-labeling: true
           token: ${{ secrets.GH_ACTION_TOKEN }}
+          extra-files:
+            - type: toml
+              path: pyproject.toml
+              jsonpath: "$.tool.commitizen.version"
