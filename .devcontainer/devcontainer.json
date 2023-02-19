@@ -1,0 +1,91 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+  "name": "Ubuntu",
+  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+  "image": "mcr.microsoft.com/devcontainers/base:jammy",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/poetry:2": {
+      "version": "latest"
+    },
+    "ghcr.io/devcontainers/features/git:1": {
+      "version": "latest"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "davidanson.vscode-markdownlint",
+        "editorconfig.editorconfig",
+        "esbenp.prettier-vscode",
+        "gruntfuggly.todo-tree",
+        "ms-python.python",
+        "oderwat.indent-rainbow",
+        "vivaxy.vscode-conventional-commits"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "git.autofetch": true,
+        "git.confirmSync": false,
+        "git.autoStash": true,
+        "git.pruneOnFetch": true,
+        "git.alwaysShowStagedChangesResourceGroup": true,
+        "git.fetchOnPull": true,
+        "git.followTagsWhenSync": true,
+        "git.enableCommitSigning": false,
+        "git.showPushSuccessNotification": true,
+        // Remote Containers settings
+        "dev.containers.copyGitConfig": true,
+        "conventionalCommits.emojiFormat": "emoji",
+        "conventionalCommits.gitmoji": true,
+        "conventionalCommits.autoCommit": false,
+        "prettier.proseWrap": "always",
+        "[dockerfile]": {
+          "editor.quickSuggestions": {
+            "strings": true
+          }
+        },
+        "[jsonc]": {
+          "editor.quickSuggestions": {
+            "strings": true
+          },
+          "editor.insertSpaces": true,
+          "editor.tabSize": 2,
+          "editor.autoIndent": "advanced",
+          "editor.suggest.insertMode": "replace"
+        },
+        "[markdown]": {
+          "editor.unicodeHighlight.ambiguousCharacters": false,
+          "editor.unicodeHighlight.invisibleCharacters": false,
+          "editor.wordWrap": "on"
+        },
+        "[yaml]": {
+          "editor.insertSpaces": true,
+          "editor.tabSize": 2,
+          "editor.autoIndent": "keep",
+          "gitlens.codeLens.scopes": ["document"],
+          "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+          }
+        }
+      }
+    }
+  },
+
+  // Features to add to the dev container. More info: https://containers.dev/features.
+  // "features": {},
+
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
+
+  // Use 'postCreateCommand' to run commands after the container is created.
+  "postCreateCommand": "poetry install --no-interaction"
+
+  // Configure tool-specific properties.
+  // "customizations": {},
+
+  // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+  // "remoteUser": "root"
+}
