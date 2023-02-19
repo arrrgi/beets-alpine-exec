@@ -1,11 +1,14 @@
+name: release-please
+
 on:
   push:
     branches:
       - main
-name: release-please
+
 jobs:
   release-please:
     runs-on: ubuntu-latest
+
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
@@ -13,4 +16,4 @@ jobs:
           package-name: beets-alpine-exec
           include-v-in-tag: false
           skip-labeling: true
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_ACTION_TOKEN }}
