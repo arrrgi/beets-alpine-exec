@@ -106,7 +106,7 @@ jobs:
         uses: commitizen-tools/commitizen-action@master
         with:
           github_token: ${{ secrets.CZ_RELEASE_PAT }}
-          changelog_incremental_filename: body.md
+          changelog_increment_filename: body.md
 
       - name: Release
         uses: softprops/action-gh-release@v1
