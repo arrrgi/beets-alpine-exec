@@ -1,0 +1,14 @@
+{
+  "release-type": "python",
+  "draft": true,
+  "packages": {
+    ".": {
+      "release-type": "python"
+    }
+  },
+  "extra-files": {
+    "type": "toml",
+    "path": "pyproject.toml",
+    "jsonpath": "$.tool.commitizen.version"
+  }
+}

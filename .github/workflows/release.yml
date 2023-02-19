@@ -12,12 +12,4 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v3
         with:
-          release-type: python
-          package-name: beets-alpine-exec
-          include-v-in-tag: false
-          skip-labeling: true
-          token: ${{ secrets.GH_ACTION_TOKEN }}
-          extra-files:
-            - type: toml
-              path: pyproject.toml
-              jsonpath: "$.tool.commitizen.version"
+          command: manifest
