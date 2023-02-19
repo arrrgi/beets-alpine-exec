@@ -20,6 +20,7 @@
         "esbenp.prettier-vscode",
         "gruntfuggly.todo-tree",
         "ms-python.python",
+        "redhat.vscode-yaml",
         "oderwat.indent-rainbow",
         "vivaxy.vscode-conventional-commits"
       ],
