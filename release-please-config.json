@@ -10,7 +10,7 @@
       "prerelease": false
     }
   },
-  "include-v-in-tag": false,
+  "include-v-in-tag": true,
   "extra-files": [
     {
       "type": "toml",
