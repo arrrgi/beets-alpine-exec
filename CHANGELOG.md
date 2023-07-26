@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.5.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.5.0...v0.5.1) (2023-07-26)
+
+
+### Bug Fixes
+
+* 🐛 update Poetry and Beets package dependencies ([#31](https://github.com/arrrgi/beets-alpine-exec/issues/31)) ([cdfde7a](https://github.com/arrrgi/beets-alpine-exec/commit/cdfde7a6bf0cd96fdb2b2a60955a5c35c1bc943f))
+
 ## [0.5.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.4.0...v0.5.0) (2023-02-19)
 
 
