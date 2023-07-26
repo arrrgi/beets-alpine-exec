@@ -25,7 +25,7 @@ RUN apk add --update --no-cache \
     libffi-dev \
     musl-dev \
   && pip install poetry==${POETRY_VERSION}
-COPY poetry.lock poetry.toml pyproject.toml /app
+COPY poetry.lock poetry.toml pyproject.toml /app/
 RUN poetry export --format requirements.txt --output requirements.txt
 
 FROM python:3.10.10-alpine3.17 as runtime
