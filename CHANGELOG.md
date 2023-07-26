@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.6.0...v0.7.0) (2023-07-26)
+
+
+### Features
+
+* **deps:** pin Alpine base image with hash ([#47](https://github.com/arrrgi/beets-alpine-exec/issues/47)) ([4a89ea7](https://github.com/arrrgi/beets-alpine-exec/commit/4a89ea705b2c2d587ae1c81e11c74b45058afb2f))
+
 ## [0.6.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.5.1...v0.6.0) (2023-07-26)
 
 
