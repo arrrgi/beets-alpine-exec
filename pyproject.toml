@@ -12,7 +12,7 @@ beets = "^1.6.0"
 flask = "^2.3.2"
 pillow = "^10.0.0"
 pyacoustid = "^1.2.2"
-pylast = "^5.1.0"
+pylast = "^5.2.0"
 requests = "^2.31.0"
 wheel = "^0.41.0"
 
