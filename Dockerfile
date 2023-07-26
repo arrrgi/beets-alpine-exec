@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM python:3.10.10-alpine3.17 as poetry
+FROM python:3.11.4-alpine3.17@sha256:0c034f5cd0972a45a9475ca6c4286c73281a44b6d74b6b99785f7a2879c9ec68 as poetry
 ENV POETRY_VERSION=1.5.1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
@@ -28,7 +28,7 @@ RUN apk add --update --no-cache \
 COPY poetry.lock poetry.toml pyproject.toml /app/
 RUN poetry export --format requirements.txt --output requirements.txt
 
-FROM python:3.10.10-alpine3.17 as runtime
+FROM python:3.11.4-alpine3.17@sha256:0c034f5cd0972a45a9475ca6c4286c73281a44b6d74b6b99785f7a2879c9ec68 as runtime
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
     BEETSDIR=/config
