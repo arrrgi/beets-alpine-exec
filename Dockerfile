@@ -17,7 +17,7 @@ RUN cmake \
   && make install
 
 FROM python:3.10.10-alpine3.17 as poetry
-ENV POETRY_VERSION=1.3.2 \
+ENV POETRY_VERSION=1.5.1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 RUN apk add --update --no-cache \
