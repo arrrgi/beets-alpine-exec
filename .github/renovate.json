@@ -3,7 +3,11 @@
   "extends": [
     "local>arrrgi/renovate-config",
     "helpers:pinGitHubActionDigests",
-    "workarounds:doNotUpgradeFromAlpineStableToEdge"
+    "workarounds:doNotUpgradeFromAlpineStableToEdge",
+    "docker:disableMajor",
+    "docker:pinDigests"
   ],
-  "enabledManagers": ["dockerfile", "github-actions", "poetry"]
+  "enabledManagers": ["dockerfile", "github-actions", "poetry"],
+  "automerge": false,
+  "prCreation": "immediate"
 }
