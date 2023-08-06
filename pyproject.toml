@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "beets-alpine-exec"
-version = "0.7.1"
+version = "0.7.2"
 description = "Opinionated container for Beets Music Organizer"
 authors = ["Rowan Gillson <devops@the.bald.engineer>"]
 license = "MIT"
@@ -22,7 +22,7 @@ commitizen = "^3.6.0"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "0.7.1"
+version = "0.7.2"
 tag_format = "v$version"
 annotated_tag = "true"
 version_files = [
