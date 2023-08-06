@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.7.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.7.0...v0.7.1) (2023-08-06)
+
+
+### Bug Fixes
+
+* 🐛 update entrypoint to correct path ([#52](https://github.com/arrrgi/beets-alpine-exec/issues/52)) ([5d4c9dc](https://github.com/arrrgi/beets-alpine-exec/commit/5d4c9dc96decd7e5b16dbc8a2f04a04c446327e3))
+
 ## [0.7.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.6.0...v0.7.0) (2023-07-26)
 
 
