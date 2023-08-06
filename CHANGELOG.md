@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.8.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.7.2...v0.8.0) (2023-08-06)
+
+
+### Features
+
+* ✨ add container build spec and dependancy tooling ([0ca6cd8](https://github.com/arrrgi/beets-alpine-exec/commit/0ca6cd80ecd8f5c08157d7413fa1aacc8a2af1c3))
+* add useful YAML extension to Devcontainer ([be5600c](https://github.com/arrrgi/beets-alpine-exec/commit/be5600c060fadd0218fd2d027fd95610b32bc42c))
+* **deps:** pin Alpine base image with hash ([#47](https://github.com/arrrgi/beets-alpine-exec/issues/47)) ([4a89ea7](https://github.com/arrrgi/beets-alpine-exec/commit/4a89ea705b2c2d587ae1c81e11c74b45058afb2f))
+* ensure latest tag is available on images from main ([#34](https://github.com/arrrgi/beets-alpine-exec/issues/34)) ([7856da7](https://github.com/arrrgi/beets-alpine-exec/commit/7856da7fb0bf37c1f8e5aef040eb4e93c2609838))
+
+
+### Bug Fixes
+
+* 🐛 include Chromaprint build files and revert Pillow version ([#54](https://github.com/arrrgi/beets-alpine-exec/issues/54)) ([d8f055a](https://github.com/arrrgi/beets-alpine-exec/commit/d8f055a5da68bb043902958472159479beade78e))
+* 🐛 update entrypoint to correct path ([#52](https://github.com/arrrgi/beets-alpine-exec/issues/52)) ([5d4c9dc](https://github.com/arrrgi/beets-alpine-exec/commit/5d4c9dc96decd7e5b16dbc8a2f04a04c446327e3))
+* 🐛 update Poetry and Beets package dependencies ([#31](https://github.com/arrrgi/beets-alpine-exec/issues/31)) ([cdfde7a](https://github.com/arrrgi/beets-alpine-exec/commit/cdfde7a6bf0cd96fdb2b2a60955a5c35c1bc943f))
+
+
+### Documentation
+
+* 📝 add limited documentation and license ([186e034](https://github.com/arrrgi/beets-alpine-exec/commit/186e034711a074a42de7a3861de952a68b9feaf1))
+
 ## [0.7.2](https://github.com/arrrgi/beets-alpine-exec/compare/v0.7.1...v0.7.2) (2023-08-06)
 
 
