@@ -12,7 +12,7 @@ WORKDIR /tmp/chromaprint
 RUN cmake \
     -DBUILD_TOOLS=ON \
     -DCMAKE_BUILD_TYPE=Release \
-    -DCMAKE_INSTALL_PREFIX:PATH=/tmp/build \
+    -DCMAKE_INSTALL_PREFIX:PATH=/tmp/build . \
   && make \
   && make install
 
@@ -33,7 +33,7 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
     BEETSDIR=/config
 WORKDIR /app
-COPY --from=chromaprint /tmp/chromaprint /usr
+COPY --from=chromaprint /tmp/build /usr
 COPY --from=poetry /app/requirements.txt /app
 RUN apk add --update --no-cache \
     ffmpeg \
