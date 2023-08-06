@@ -50,5 +50,5 @@ RUN apk add --update --no-cache \
 
 VOLUME [ "/config", "/music", "/working" ]
 WORKDIR /working
-ENTRYPOINT [ "/usr/bin/beet" ]
+ENTRYPOINT [ "/usr/local/bin/beet" ]
 CMD [ "help" ]
