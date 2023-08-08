@@ -14,7 +14,7 @@ pillow = "^9.5.0"
 pyacoustid = "^1.2.2"
 pylast = "^5.2.0"
 requests = "^2.31.0"
-wheel = "^0.41.0"
+wheel = "^0.41.1"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.3.3"
