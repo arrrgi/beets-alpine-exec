@@ -18,7 +18,7 @@ wheel = "^0.41.2"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^3.4.0"
-commitizen = "^3.8.0"
+commitizen = "^3.8.1"
 
 [tool.commitizen]
 name = "cz_conventional_commits"
