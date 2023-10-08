@@ -40,6 +40,7 @@ RUN apk add --update --no-cache \
     ffmpeg-libs \
     gstreamer \
     gst-plugins-good \
+    py3-setuptools-rust \
     vim \
   && pip install --no-cache-dir -r requirements.txt \
   && mkdir /config \
