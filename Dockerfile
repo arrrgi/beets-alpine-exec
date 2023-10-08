@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM python:3.11.6-alpine3.18@sha256:3e73c0b6c1f0205225359acac5c8ab1852e7281248d72afda3e1bb8c6f47deab as poetry
+FROM python:3.12.0-alpine3.18@sha256:ae35274f417fc81ba6ee1fc84206e8517f28117566ee6a04a64f004c1409bdac as poetry
 ENV POETRY_VERSION=1.5.1 \
     PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
@@ -28,7 +28,7 @@ RUN apk add --update --no-cache \
 COPY poetry.lock poetry.toml pyproject.toml /app/
 RUN poetry export --format requirements.txt --output requirements.txt
 
-FROM python:3.11.6-alpine3.18@sha256:3e73c0b6c1f0205225359acac5c8ab1852e7281248d72afda3e1bb8c6f47deab as runtime
+FROM python:3.12.0-alpine3.18@sha256:ae35274f417fc81ba6ee1fc84206e8517f28117566ee6a04a64f004c1409bdac as runtime
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
     BEETSDIR=/config
@@ -40,6 +40,7 @@ RUN apk add --update --no-cache \
     ffmpeg-libs \
     gstreamer \
     gst-plugins-good \
+    py3-setuptools-rust \
     vim \
   && pip install --no-cache-dir -r requirements.txt \
   && mkdir /config \
