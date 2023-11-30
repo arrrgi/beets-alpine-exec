@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.8.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.0...v0.8.1) (2023-11-30)
+
+
+### Bug Fixes
+
+* 🚑️ change devcontainer variant to support Python 3.12 ([95a5014](https://github.com/arrrgi/beets-alpine-exec/commit/95a50147fbc8d1c3e43d95cd3e37cfeaf4e45e3c))
+* 🚑️ update poetry install params for devcontainer build def ([70bf51c](https://github.com/arrrgi/beets-alpine-exec/commit/70bf51c068ce028a8c57c4aed4698b908ffc1b6c))
+
 ## [0.8.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.7.2...v0.8.0) (2023-08-06)
 
 
