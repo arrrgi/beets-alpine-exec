@@ -103,7 +103,7 @@ jobs:
           tag: latest-slim
 
       - name: Slim the semver container build version
-        if: ${{ github.ref_name == 'refs/tags/v*' }} && ${{ github.event_name == 'push' }}
+        if: ${{ github.ref_type == 'tag' }} && ${{ github.event_name != 'pull_request' }}
         uses: kitabisa/docker-slim-action@v1
         env:
           DSLIM_HTTP_PROBE: false
