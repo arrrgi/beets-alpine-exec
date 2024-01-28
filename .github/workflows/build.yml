@@ -99,7 +99,7 @@ jobs:
         env:
           DSLIM_HTTP_PROBE: false
         with:
-          target: ${{ env.IMAGE_NAME }}:${{ github.ref }}
+          target: ${{ env.IMAGE_NAME }}:${{ github.ref_name }}
           tag: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest-slim
 
       - name: Slim the semver container build version
