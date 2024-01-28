@@ -98,7 +98,7 @@ jobs:
         env:
           DSLIM_HTTP_PROBE: false
         with:
-          target: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          target: ${{ env.IMAGE_NAME }}:latest
           tag: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest-slim
 
       - name: Slim the semver container build version
@@ -107,7 +107,7 @@ jobs:
         env:
           DSLIM_HTTP_PROBE: false
         with:
-          target: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}
+          target: ${{ env.IMAGE_NAME }}:${{ github.ref_name }}
           tag: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }}-slim
 
       # Push the slimmed container builds to the registry except on PRs.
