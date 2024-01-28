@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.8.2](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.1...v0.8.2) (2024-01-28)
+
+
+### Bug Fixes
+
+* 🔧 refactor to support Git sourced version of Beets ([#185](https://github.com/arrrgi/beets-alpine-exec/issues/185)) ([03c7bb5](https://github.com/arrrgi/beets-alpine-exec/commit/03c7bb5cf0f2315a1611a54f4d657dfe74cba035))
+* push images to registry as final step ([e6edfcb](https://github.com/arrrgi/beets-alpine-exec/commit/e6edfcbfecb53b77a9ab155dbceebc79956f4319))
+* swap push and load logic for workflow ([e37d28c](https://github.com/arrrgi/beets-alpine-exec/commit/e37d28cf0cbdae33149233ba06fae787a6780766))
+
 ## [0.8.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.0...v0.8.1) (2023-11-30)
 
 
