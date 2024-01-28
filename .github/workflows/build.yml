@@ -62,7 +62,7 @@ jobs:
             type=ref,event=pr
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=sha
+            type=sha,format=long
             type=raw,value=latest,enable={{is_default_branch}}
 
       # Build and push Docker image with Buildx
@@ -99,7 +99,7 @@ jobs:
         env:
           DSLIM_HTTP_PROBE: false
         with:
-          target: ${{ env.IMAGE_NAME }}:${{ github.ref_name }}
+          target: ${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
           tag: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest-slim
 
       - name: Slim the semver container build version
