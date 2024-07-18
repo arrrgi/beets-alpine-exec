@@ -1,4 +1,4 @@
-FROM alpine:3.19.0@sha256:51b67269f354137895d43f3b3d810bfacd3945438e94dc5ac55fdac340352f48 AS chromaprint
+FROM alpine:3.19.2@sha256:af4785ccdbcd5cde71bfd5b93eabd34250b98651f19fe218c91de6c8d10e21c5 AS chromaprint
 RUN apk add --update --no-cache \
   cmake \
   ffmpeg-dev \
