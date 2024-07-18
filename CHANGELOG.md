@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.9.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.2...v0.9.0) (2024-07-18)
+
+
+### Features
+
+* update beets and build dependency versions ([#205](https://github.com/arrrgi/beets-alpine-exec/issues/205)) ([e906db9](https://github.com/arrrgi/beets-alpine-exec/commit/e906db90d5fb7ead1c2cd87ae017d066e1ef21a2))
+
+
+### Bug Fixes
+
+* 🐛 updates cosign action and version to fix attestation ([#209](https://github.com/arrrgi/beets-alpine-exec/issues/209)) ([074df99](https://github.com/arrrgi/beets-alpine-exec/commit/074df9943493489af79403e23c83f393485f4989))
+* 👷 update actions and remove redundant steps ([#211](https://github.com/arrrgi/beets-alpine-exec/issues/211)) ([286f6c4](https://github.com/arrrgi/beets-alpine-exec/commit/286f6c45ffe3580f54fcab41046e0dfcd684804b))
+* update build pipeline to ignore cosign prompt ([#210](https://github.com/arrrgi/beets-alpine-exec/issues/210)) ([752f5d5](https://github.com/arrrgi/beets-alpine-exec/commit/752f5d5667cabcb8adc288d813291de0636a39a2))
+
 ## [0.8.2](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.1...v0.8.2) (2024-01-28)
 
 
