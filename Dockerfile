@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM python:3.12.5-alpine3.20@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de AS poetry
+FROM python:3.12.5-alpine3.20@sha256:aeff64320ffb81056a2afae9d627875c5ba7d303fb40d6c0a43ee49d8f82641c AS poetry
 ENV POETRY_VERSION=1.8.3 \
     PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
@@ -28,7 +28,7 @@ RUN apk add --update --no-cache \
 COPY poetry.lock poetry.toml pyproject.toml /app/
 RUN poetry export --without-hashes --format requirements.txt --output requirements.txt
 
-FROM python:3.12.5-alpine3.20@sha256:c2f41e6a5a67bc39b95be3988dd19fbd05d1b82375c46d9826c592cca014d4de AS runtime
+FROM python:3.12.5-alpine3.20@sha256:aeff64320ffb81056a2afae9d627875c5ba7d303fb40d6c0a43ee49d8f82641c AS runtime
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
     BEETSDIR=/config
