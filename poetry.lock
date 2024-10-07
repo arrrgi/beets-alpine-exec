@@ -22,13 +22,13 @@ trio = ["trio (>=0.26.1)"]
 
 [[package]]
 name = "argcomplete"
-version = "3.5.0"
+version = "3.5.1"
 description = "Bash tab completion for argparse"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "argcomplete-3.5.0-py3-none-any.whl", hash = "sha256:d4bcf3ff544f51e16e54228a7ac7f486ed70ebf2ecfe49a63a91171c76bf029b"},
-    {file = "argcomplete-3.5.0.tar.gz", hash = "sha256:4349400469dccfb7950bb60334a680c58d88699bff6159df61251878dc6bf74b"},
+    {file = "argcomplete-3.5.1-py3-none-any.whl", hash = "sha256:1a1d148bdaa3e3b93454900163403df41448a248af01b6e849edc5ac08e6c363"},
+    {file = "argcomplete-3.5.1.tar.gz", hash = "sha256:eb1ee355aa2557bd3d0145de7b06b2a45b0ce461e1e7813f5d066039ab4177b4"},
 ]
 
 [package.extras]
@@ -364,13 +364,13 @@ files = [
 
 [[package]]
 name = "httpcore"
-version = "1.0.5"
+version = "1.0.6"
 description = "A minimal low-level HTTP client."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "httpcore-1.0.5-py3-none-any.whl", hash = "sha256:421f18bac248b25d310f3cacd198d55b8e6125c107797b609ff9b7a6ba7991b5"},
-    {file = "httpcore-1.0.5.tar.gz", hash = "sha256:34a38e2f9291467ee3b44e89dd52615370e152954ba21721378a87b2960f7a61"},
+    {file = "httpcore-1.0.6-py3-none-any.whl", hash = "sha256:27b59625743b85577a8c0e10e55b50b5368a4f2cfe8cc7bcfa9cf00829c2682f"},
+    {file = "httpcore-1.0.6.tar.gz", hash = "sha256:73f6dbd6eb8c21bbf7ef8efad555481853f5f6acdeaff1edb0694289269ee17f"},
 ]
 
 [package.dependencies]
@@ -381,7 +381,7 @@ h11 = ">=0.13,<0.15"
 asyncio = ["anyio (>=4.0,<5.0)"]
 http2 = ["h2 (>=3,<5)"]
 socks = ["socksio (==1.*)"]
-trio = ["trio (>=0.22.0,<0.26.0)"]
+trio = ["trio (>=0.22.0,<1.0)"]
 
 [[package]]
 name = "httpx"
@@ -985,13 +985,13 @@ files = [
 
 [[package]]
 name = "termcolor"
-version = "2.4.0"
+version = "2.5.0"
 description = "ANSI color formatting for output in terminal"
 optional = false
-python-versions = ">=3.8"
+python-versions = ">=3.9"
 files = [
-    {file = "termcolor-2.4.0-py3-none-any.whl", hash = "sha256:9297c0df9c99445c2412e832e882a7884038a25617c60cea2ad69488d4040d63"},
-    {file = "termcolor-2.4.0.tar.gz", hash = "sha256:aab9e56047c8ac41ed798fa36d892a37aca6b3e9159f3e0c24bc64a9b3ac7b7a"},
+    {file = "termcolor-2.5.0-py3-none-any.whl", hash = "sha256:37b17b5fc1e604945c2642c872a3764b5d547a48009871aea3edd3afa180afb8"},
+    {file = "termcolor-2.5.0.tar.gz", hash = "sha256:998d8d27da6d48442e8e1f016119076b690d962507531df4890fcd2db2ef8a6f"},
 ]
 
 [package.extras]
