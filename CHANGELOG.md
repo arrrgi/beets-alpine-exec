@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.9.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.9.0...v0.9.1) (2024-11-04)
+
+
+### Bug Fixes
+
+* migrate release please action to new org ([#219](https://github.com/arrrgi/beets-alpine-exec/issues/219)) ([cb56e3b](https://github.com/arrrgi/beets-alpine-exec/commit/cb56e3b626ee51b293ea182e3e607273c8cb8d69))
+
 ## [0.9.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.8.2...v0.9.0) (2024-07-18)
 
 
