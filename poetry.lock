@@ -271,13 +271,13 @@ files = [
 
 [[package]]
 name = "commitizen"
-version = "3.30.1"
+version = "3.31.0"
 description = "Python commitizen client tool"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "commitizen-3.30.1-py3-none-any.whl", hash = "sha256:bede386f6541b00c3b43b88053b1c043de17aeea5d07c3ce6bf0f05e3abad76a"},
-    {file = "commitizen-3.30.1.tar.gz", hash = "sha256:7663f64d43f7a432498ec378b47a35b9904cdb76605aa5e3a28f18cfffcc5abe"},
+    {file = "commitizen-3.31.0-py3-none-any.whl", hash = "sha256:a28df7ab5b8665d48796c422a97dcfae0d0fce7e2d28404c0e386cf1ebd42c8f"},
+    {file = "commitizen-3.31.0.tar.gz", hash = "sha256:6ab973e91d07c1e745c6c0efe6dd0708b1f6d8fd7e4ab5e7c773b5ceb3df4ff0"},
 ]
 
 [package.dependencies]
@@ -390,13 +390,13 @@ files = [
 
 [[package]]
 name = "httpcore"
-version = "1.0.6"
+version = "1.0.7"
 description = "A minimal low-level HTTP client."
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "httpcore-1.0.6-py3-none-any.whl", hash = "sha256:27b59625743b85577a8c0e10e55b50b5368a4f2cfe8cc7bcfa9cf00829c2682f"},
-    {file = "httpcore-1.0.6.tar.gz", hash = "sha256:73f6dbd6eb8c21bbf7ef8efad555481853f5f6acdeaff1edb0694289269ee17f"},
+    {file = "httpcore-1.0.7-py3-none-any.whl", hash = "sha256:a3fff8f43dc260d5bd363d9f9cf1830fa3a458b332856f34282de498ed420edd"},
+    {file = "httpcore-1.0.7.tar.gz", hash = "sha256:8551cb62a169ec7162ac7be8d4817d561f60e08eaa485234898414bb5a8a0b4c"},
 ]
 
 [package.dependencies]
