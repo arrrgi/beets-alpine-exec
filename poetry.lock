@@ -50,27 +50,30 @@ test = ["tox"]
 
 [[package]]
 name = "beets"
-version = "2.0.0"
+version = "2.1.0"
 description = "music tagger and library organizer"
 optional = false
-python-versions = "*"
+python-versions = "<4,>=3.8"
 files = [
-    {file = "beets-2.0.0-py3-none-any.whl", hash = "sha256:6fe596f578ce50652fc634d399af67bc0450b325c349989af781805599fcedb3"},
-    {file = "beets-2.0.0.tar.gz", hash = "sha256:3b1172b5bc3729e33a6ea4689f7d0236682bf828c67196b6a260f0389cb1f8cf"},
+    {file = "beets-2.1.0-py3-none-any.whl", hash = "sha256:dd72e41008a3aaced0a49749820f75a5b6d03aa3d4a41a4298c40dc8c9e4f854"},
+    {file = "beets-2.1.0.tar.gz", hash = "sha256:a0abcdf95d5f89fcf46b07ddc2b5b92e1dd5abe68f4cc7222f21aff2dffc4789"},
 ]
 
 [package.dependencies]
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
 confuse = ">=1.5.0"
 jellyfish = "*"
 mediafile = ">=0.12.0"
 munkres = ">=1.0.0"
 musicbrainzngs = ">=0.4"
+platformdirs = ">=3.5.0"
 pyyaml = "*"
-typing-extensions = "*"
 unidecode = ">=1.3.6"
 
 [package.extras]
 absubmit = ["requests"]
+aura = ["Pillow", "flask", "flask-cors"]
+autobpm = ["librosa (>=0.10.2.post1,<0.11.0)", "resampy (>=0.4.3)"]
 beatport = ["requests-oauthlib (>=0.6.1)"]
 bpd = ["PyGObject"]
 chroma = ["pyacoustid"]
@@ -78,22 +81,19 @@ discogs = ["python3-discogs-client (>=2.3.15)"]
 docs = ["pydata-sphinx-theme", "sphinx"]
 embedart = ["Pillow"]
 embyupdate = ["requests"]
-fetchart = ["Pillow", "beautifulsoup4", "requests"]
+fetchart = ["Pillow", "beautifulsoup4", "langdetect", "requests"]
 import = ["py7zr", "rarfile"]
 kodiupdate = ["requests"]
 lastgenre = ["pylast"]
 lastimport = ["pylast"]
-lint = ["flake8", "flake8-docstrings", "pep8-naming"]
 lyrics = ["beautifulsoup4", "langdetect", "requests"]
 metasync = ["dbus-python"]
 mpdstats = ["python-mpd2 (>=0.4.2)"]
-mypy = ["mypy", "types-Flask-Cors", "types-Pillow", "types-PyYAML", "types-beautifulsoup4", "types-requests", "types-urllib3"]
 plexupdate = ["requests"]
 reflink = ["reflink"]
 replaygain = ["PyGObject"]
 scrub = ["mutagen (>=1.33)"]
 sonosupdate = ["soco"]
-test = ["beautifulsoup4", "flask", "mock", "py7zr", "pylast", "pytest", "pytest-cov", "python-mpd2", "python3-discogs-client (>=2.3.15)", "pyxdg", "rarfile", "reflink", "requests-oauthlib", "responses (>=0.3.0)"]
 thumbnails = ["Pillow", "pyxdg"]
 web = ["flask", "flask-cors"]
 
@@ -1033,17 +1033,6 @@ files = [
 ]
 
 [[package]]
-name = "typing-extensions"
-version = "4.12.2"
-description = "Backported and Experimental Type Hints for Python 3.8+"
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "typing_extensions-4.12.2-py3-none-any.whl", hash = "sha256:04e5ca0351e0f3f85c6853954072df659d0d13fac324d0072316b67d7794700d"},
-    {file = "typing_extensions-4.12.2.tar.gz", hash = "sha256:1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"},
-]
-
-[[package]]
 name = "unidecode"
 version = "1.3.8"
 description = "ASCII transliterations of Unicode text"
@@ -1136,4 +1125,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.13.0"
-content-hash = "e8dd8050d4d4782b51f8cbd9962d6f47cc33ebf8073f7c4a6561406d41051e2d"
+content-hash = "092eabe1ed258ae6a895ae01550ae5d686f48f0d67a63dd006d355a2dc5651b5"
