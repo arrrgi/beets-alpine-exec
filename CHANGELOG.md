@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.0...v0.10.1) (2024-12-14)
+
+
+### Bug Fixes
+
+* 🚑️ revert Python version as aifc module now deprecated ([#300](https://github.com/arrrgi/beets-alpine-exec/issues/300)) ([17fc52f](https://github.com/arrrgi/beets-alpine-exec/commit/17fc52fddf0dd3175768fcc61eb3d841bd276569))
+
 ## [0.10.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.9.1...v0.10.0) (2024-11-05)
 
 
