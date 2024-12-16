@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.10.2](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.1...v0.10.2) (2024-12-16)
+
+
+### Bug Fixes
+
+* downgrade and pin Python to 3.12.8 until aifc module available ([18861f5](https://github.com/arrrgi/beets-alpine-exec/commit/18861f5964826683e1a599d5bce11c827f86dab7))
+
 ## [0.10.1](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.0...v0.10.1) (2024-12-14)
 
 
