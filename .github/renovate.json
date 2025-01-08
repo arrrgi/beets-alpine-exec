@@ -9,5 +9,11 @@
   ],
   "enabledManagers": ["dockerfile", "github-actions", "poetry"],
   "automerge": false,
-  "prCreation": "immediate"
+  "prCreation": "immediate",
+  "packageRules": [
+    {
+      "matchPackageNames": ["python"],
+      "enabled": false
+    }
+  ]
 }
