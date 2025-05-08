@@ -20,7 +20,7 @@ colorama = "^0.4.6"
 
 [tool.poetry.group.dev.dependencies]
 pre-commit = "^4.2.0"
-commitizen = "^4.6.1"
+commitizen = "^4.6.2"
 
 [tool.poetry.plugins]
 [tool.poetry.plugins."poetry.application.plugin"]
