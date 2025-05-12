@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.11.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.2...v0.11.0) (2025-05-12)
+
+
+### Features
+
+* update beets to v2.3.0 ([#367](https://github.com/arrrgi/beets-alpine-exec/issues/367)) ([4341991](https://github.com/arrrgi/beets-alpine-exec/commit/43419915ee5448528d7e671cbf23505668e1f72b))
+
 ## [0.10.2](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.1...v0.10.2) (2024-12-16)
 
 
