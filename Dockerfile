@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM python:3.13.3-alpine
+FROM python:3.13.3-alpine AS poetry
 ENV POETRY_VERSION=2.0.0 \
     PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
@@ -24,7 +24,8 @@ RUN apk add --update --no-cache \
     gcc \
     libffi-dev \
     musl-dev \
-  && pip install poetry==${POETRY_VERSION}
+  && pip install poetry==${POETRY_VERSION} \
+  && pip install poetry-plugin-export
 COPY poetry.lock poetry.toml pyproject.toml /app/
 RUN poetry export --without-hashes --format requirements.txt --output requirements.txt
 
