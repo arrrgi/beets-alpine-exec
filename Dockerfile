@@ -16,18 +16,15 @@ RUN cmake \
   && make \
   && make install
 
-FROM python:3.13.3-alpine AS poetry
-ENV POETRY_VERSION=2.0.0 \
-    PIP_DISABLE_PIP_VERSION_CHECK=on
+FROM ghcr.io/astral-sh/uv:python3.13-alpine AS uv
+ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 RUN apk add --update --no-cache \
     gcc \
     libffi-dev \
-    musl-dev \
-  && pip install poetry==${POETRY_VERSION} \
-  && pip install poetry-plugin-export
-COPY poetry.lock poetry.toml pyproject.toml /app/
-RUN poetry export --without-hashes --format requirements.txt --output requirements.txt
+    musl-dev
+COPY pyproject.toml uv.lock /app/
+RUN uv export --no-hashes --no-dev --format=requirements-txt --output-file=requirements.txt
 
 FROM python:3.13.3-alpine
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
@@ -35,7 +32,7 @@ ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     BEETSDIR=/config
 WORKDIR /app
 COPY --from=chromaprint /tmp/build /usr
-COPY --from=poetry /app/requirements.txt /app
+COPY --from=uv /app/requirements.txt /app
 RUN apk add --update --no-cache \
     ffmpeg \
     ffmpeg-libs \
