@@ -1,5 +1,23 @@
 # Changelog
 
+## [1.0.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.11.0...v1.0.0) (2025-05-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* **build:** switch tooling to UV ([#376](https://github.com/arrrgi/beets-alpine-exec/issues/376))
+
+### Bug Fixes
+
+* rename Python stage in Dockerfile for clarity ([#373](https://github.com/arrrgi/beets-alpine-exec/issues/373)) ([6faea27](https://github.com/arrrgi/beets-alpine-exec/commit/6faea2739a7ec061e63f5d29c706b06d2207727e))
+* switch Python base image to alpine for smaller image size ([#372](https://github.com/arrrgi/beets-alpine-exec/issues/372)) ([04b0a0d](https://github.com/arrrgi/beets-alpine-exec/commit/04b0a0da69dd80540c698e89725d37675eba10cf))
+* update Python and Poetry versions to match project requirements ([#371](https://github.com/arrrgi/beets-alpine-exec/issues/371)) ([b49243a](https://github.com/arrrgi/beets-alpine-exec/commit/b49243aef9b435481ccf492dda4adfbc7c8a3576))
+
+
+### Code Refactoring
+
+* **build:** switch tooling to UV ([#376](https://github.com/arrrgi/beets-alpine-exec/issues/376)) ([15d1f30](https://github.com/arrrgi/beets-alpine-exec/commit/15d1f30bb2df160e4811194fc9430fa06315a6df))
+
 ## [0.11.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.10.2...v0.11.0) (2025-05-12)
 
 
