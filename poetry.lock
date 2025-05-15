@@ -50,13 +50,13 @@ test = ["tox"]
 
 [[package]]
 name = "beets"
-version = "2.3.0"
+version = "2.3.1"
 description = "music tagger and library organizer"
 optional = false
 python-versions = "<4,>=3.9"
 files = [
-    {file = "beets-2.3.0-py3-none-any.whl", hash = "sha256:3ccd38d7a19e2a577da491adb627f35e5ae5b51e1def0d5b2c9edf0ce840b5ec"},
-    {file = "beets-2.3.0.tar.gz", hash = "sha256:b24fc7949af502601774f907ebed1998f9adf411ec8df1123a1fc3f334b63102"},
+    {file = "beets-2.3.1-py3-none-any.whl", hash = "sha256:d779f5e3403c43f5d65b9719bcbd9540d1eb04edf0be9cb985171f3266942e25"},
+    {file = "beets-2.3.1.tar.gz", hash = "sha256:87598721a14af89a06d5ad3d9e8138f8ac112510271a981a90b840ed784d5712"},
 ]
 
 [package.dependencies]
@@ -1227,4 +1227,4 @@ test = ["pytest (>=6.0.0)", "setuptools (>=65)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "3.13.3"
-content-hash = "70e387886b48da0876b870c4e87f054a4c1e517cd388aa518a99f7b1681dd04f"
+content-hash = "8bd14d8d3f6af8c1cd0638a08304b41f5eac7c296ce7bc2f1d5342635407f2e8"
