@@ -1,6 +1,6 @@
 [project]
 name = "beets-alpine-exec"
-version = "1.0.0"
+version = "2.0.0"
 description = "Batteries included Beets in Docker"
 readme = "README.md"
 authors = [
@@ -28,7 +28,7 @@ dev = [
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "1.0.0"
+version = "2.0.0"
 tag_format = "v$version"
 version_scheme = "semver"
 version_provider = "uv"
