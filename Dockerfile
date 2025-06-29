@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM ghcr.io/astral-sh/uv:python3.13-alpine@sha256:e393887758d38574b3f358d661e1ce24b716d45e8b7cacaa01b06f9b5c246d6d AS uv
+FROM ghcr.io/astral-sh/uv:python3.13-alpine@sha256:21ea0af1be03b685d57de8cbee82914ed8e22780d41f234914c98ffba0669de7 AS uv
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 RUN apk add --update --no-cache \
