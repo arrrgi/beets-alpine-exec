@@ -7,7 +7,7 @@
     "docker:disableMajor",
     "docker:pinDigests"
   ],
-  "enabledManagers": ["dockerfile", "github-actions", "poetry"],
+  "enabledManagers": ["dockerfile", "github-actions", "pep621"],
   "automerge": false,
   "prCreation": "immediate",
   "packageRules": [
