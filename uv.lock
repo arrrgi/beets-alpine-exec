@@ -84,7 +84,7 @@ requires-dist = [
     { name = "flask", specifier = ">=3.1.2" },
     { name = "pillow", specifier = ">=12.0.0" },
     { name = "pyacoustid", specifier = ">=1.3.0" },
-    { name = "pylast", specifier = ">=6.0.0" },
+    { name = "pylast", specifier = ">=7.0.0" },
     { name = "requests", specifier = ">=2.32.5" },
     { name = "unidecode", specifier = ">=1.4.0" },
     { name = "wheel", specifier = ">=0.45.1" },
@@ -591,14 +591,14 @@ sdist = { url = "https://files.pythonhosted.org/packages/1e/c7/48a17b6a75888cf76
 
 [[package]]
 name = "pylast"
-version = "6.0.0"
+version = "7.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "httpx" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/8d/f5/ec144f937b32252b127f892636c6875d876b856a9f289f3c0bc8a4e05932/pylast-6.0.0.tar.gz", hash = "sha256:09748dcdb97ddc812c65460bea73f7cce578b2b8ed4d9f6a0d1da122f8b05c5c", size = 45408, upload-time = "2025-09-29T12:44:18.935Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/e5/63/18c2c08bbbf30bf331f965f842016d8426b3a4c26033e76be9f953c62848/pylast-7.0.0.tar.gz", hash = "sha256:05803f66d50e33521788f01eb30a9d4e3fbffbb4d81420826a2e3e9ca598a370", size = 435280, upload-time = "2025-11-23T16:40:50.867Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/7e/03/c2ebbacdf3d200409198dde206cb2f59a3ee87c4086c7138cf69e3374ef1/pylast-6.0.0-py3-none-any.whl", hash = "sha256:8570017a955a04c5694e7ad38b13081b6119531b4a10bfc771ccd0b9d4f900ee", size = 26614, upload-time = "2025-09-29T12:44:17.423Z" },
+    { url = "https://files.pythonhosted.org/packages/d5/38/f5405edaf51409d1c9b313db6884d88ce305083b071c18f7972e0ac0ebc3/pylast-7.0.0-py3-none-any.whl", hash = "sha256:f6f7b19e65aee3b1a41c5c52b0eff27e1fdf1a010d52f96c6895c0b9bcb64739", size = 26800, upload-time = "2025-11-23T16:40:49.572Z" },
 ]
 
 [[package]]
