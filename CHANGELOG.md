@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/arrrgi/beets-alpine-exec/compare/v1.0.0...v1.0.1) (2026-04-06)
+
+
+### Bug Fixes
+
+* update container specs to support beets 2.8.0 on Python 3.13 ([#433](https://github.com/arrrgi/beets-alpine-exec/issues/433)) ([9f220fb](https://github.com/arrrgi/beets-alpine-exec/commit/9f220fb5f8cb104f45530e45b6ab35506c9ee9da))
+
 ## [1.0.0](https://github.com/arrrgi/beets-alpine-exec/compare/v0.11.0...v1.0.0) (2025-05-15)
 
 
