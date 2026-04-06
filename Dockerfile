@@ -34,6 +34,7 @@ WORKDIR /app
 COPY --from=chromaprint /tmp/build /usr
 COPY --from=uv /app/requirements.txt /app
 RUN apk add --update --no-cache \
+    cmake \
     ffmpeg \
     ffmpeg-libs \
     g++ \
