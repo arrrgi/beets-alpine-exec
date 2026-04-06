@@ -24,13 +24,15 @@ RUN apk add --update --no-cache \
     libffi-dev \
     musl-dev
 COPY pyproject.toml uv.lock /app/
-RUN uv export --no-hashes --no-dev --format=requirements-txt --output-file=requirements.txt
+RUN uv export --no-hashes --no-dev --format=requirements-txt \
+    --no-emit-package numba \
+    --no-emit-package llvmlite \
+    --output-file=requirements.txt
 
 FROM python:3.13.12-alpine3.23
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
-    BEETSDIR=/config \
-    LLVM_DIR=/usr/lib/llvm20/lib/cmake/llvm
+    BEETSDIR=/config
 WORKDIR /app
 COPY --from=chromaprint /tmp/build /usr
 COPY --from=uv /app/requirements.txt /app
