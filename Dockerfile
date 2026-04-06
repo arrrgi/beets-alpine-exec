@@ -29,21 +29,18 @@ RUN uv export --no-hashes --no-dev --format=requirements-txt --output-file=requi
 FROM python:3.13.12-alpine3.23
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
-    BEETSDIR=/config
+    BEETSDIR=/config \
+    LLVM_DIR=/usr/lib/llvm20/lib/cmake/llvm
 WORKDIR /app
 COPY --from=chromaprint /tmp/build /usr
 COPY --from=uv /app/requirements.txt /app
 RUN apk add --update --no-cache \
-    cmake \
     ffmpeg \
     ffmpeg-libs \
     g++ \
     git \
     gstreamer \
     gst-plugins-good \
-    llvm21 \
-    make \
-    py3-setuptools-rust \
     vim \
   && pip install --no-cache-dir -r requirements.txt \
   && mkdir /config \
