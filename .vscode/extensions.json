@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "editorconfig.editorconfig",
+    "oderwat.indent-rainbow",
+    "ms-python.python",
+    "ms-python.vscode-python-envs",
+    "docker.docker",
+    "ms-vscode-remote.remote-containers",
+    "ms-azuretools.vscode-containers"
+  ]
+}

@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM ghcr.io/astral-sh/uv:python3.13-alpine@sha256:b3590cdf03fc891859065e0b4878f88bb7570a8023b209b6d7783770e10d13fa AS uv
+FROM ghcr.io/astral-sh/uv:python3.13-alpine3.23 AS uv
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 RUN apk add --update --no-cache \
@@ -26,7 +26,7 @@ RUN apk add --update --no-cache \
 COPY pyproject.toml uv.lock /app/
 RUN uv export --no-hashes --no-dev --format=requirements-txt --output-file=requirements.txt
 
-FROM python:3.13.3-alpine
+FROM python:3.13.12-alpine3.23
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
     EDITOR=vim \
     BEETSDIR=/config
@@ -36,6 +36,7 @@ COPY --from=uv /app/requirements.txt /app
 RUN apk add --update --no-cache \
     ffmpeg \
     ffmpeg-libs \
+    g++ \
     git \
     gstreamer \
     gst-plugins-good \
