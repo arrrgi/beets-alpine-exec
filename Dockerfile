@@ -41,6 +41,7 @@ RUN apk add --update --no-cache \
     git \
     gstreamer \
     gst-plugins-good \
+    make \
     py3-setuptools-rust \
     vim \
   && pip install --no-cache-dir -r requirements.txt \
