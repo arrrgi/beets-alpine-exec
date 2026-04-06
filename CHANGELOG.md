@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/arrrgi/beets-alpine-exec/compare/v1.0.1...v1.0.2) (2026-04-06)
+
+
+### Bug Fixes
+
+* update entrypoint location and add PATH to environment variables ([#436](https://github.com/arrrgi/beets-alpine-exec/issues/436)) ([3cf0384](https://github.com/arrrgi/beets-alpine-exec/commit/3cf038484b76c54177f49f619d466b16f9872cc5))
+
 ## [1.0.1](https://github.com/arrrgi/beets-alpine-exec/compare/v1.0.0...v1.0.1) (2026-04-06)
 
 
