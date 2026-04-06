@@ -1,4 +1,4 @@
-FROM alpine:3.22.2@sha256:4b7ce07002c69e8f3d704a9c5d6fd3053be500b7f1c69fc0d80990c2ad8dd412 AS chromaprint
+FROM alpine:3.23.3@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659 AS chromaprint
 RUN apk add --update --no-cache \
   cmake \
   ffmpeg-dev \
@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM ghcr.io/astral-sh/uv:python3.13-alpine@sha256:d36977acd765d139afda077d70d0e6c2e8c18c4d1f4f91dc2f79b14fce172a98 AS uv
+FROM ghcr.io/astral-sh/uv:python3.13-alpine@sha256:b3590cdf03fc891859065e0b4878f88bb7570a8023b209b6d7783770e10d13fa AS uv
 ENV PIP_DISABLE_PIP_VERSION_CHECK=on
 WORKDIR /app
 RUN apk add --update --no-cache \
