@@ -1,6 +1,6 @@
 [project]
 name = "beets-alpine-exec"
-version = "1.0.1"
+version = "1.0.2"
 description = "Batteries included Beets in Docker"
 readme = "README.md"
 authors = [
@@ -33,7 +33,7 @@ override-dependencies = [
 
 [tool.commitizen]
 name = "cz_conventional_commits"
-version = "1.0.1"
+version = "1.0.2"
 tag_format = "v$version"
 version_scheme = "semver"
 version_provider = "uv"
