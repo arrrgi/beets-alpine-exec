@@ -16,35 +16,25 @@ RUN cmake \
   && make \
   && make install
 
-FROM ghcr.io/astral-sh/uv:python3.13-alpine3.23 AS uv
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on
-WORKDIR /app
-RUN apk add --update --no-cache \
-    gcc \
-    libffi-dev \
-    musl-dev
-COPY pyproject.toml uv.lock /app/
-RUN uv export --no-hashes --no-dev --format=requirements-txt \
-    --no-emit-package numba \
-    --no-emit-package llvmlite \
-    --output-file=requirements.txt
-
-FROM python:3.13.12-alpine3.23
-ENV PIP_DISABLE_PIP_VERSION_CHECK=on \
+FROM ghcr.io/astral-sh/uv:python3.13-alpine3.23
+ENV UV_SYSTEM_PYTHON=1 \
     EDITOR=vim \
     BEETSDIR=/config
 WORKDIR /app
 COPY --from=chromaprint /tmp/build /usr
-COPY --from=uv /app/requirements.txt /app
+COPY pyproject.toml uv.lock /app/
 RUN apk add --update --no-cache \
     ffmpeg \
     ffmpeg-libs \
     g++ \
+    gcc \
     git \
     gstreamer \
     gst-plugins-good \
+    libffi-dev \
+    musl-dev \
     vim \
-  && pip install --no-cache-dir -r requirements.txt \
+  && uv sync --no-dev --frozen --no-install-project \
   && mkdir /config \
   && rm -rf \
     /tmp/* \
