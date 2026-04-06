@@ -41,7 +41,7 @@ RUN apk add --update --no-cache \
     git \
     gstreamer \
     gst-plugins-good \
-    llvm21-dev \
+    llvm21 \
     make \
     py3-setuptools-rust \
     vim \
