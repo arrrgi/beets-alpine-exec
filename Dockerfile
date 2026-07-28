@@ -16,7 +16,7 @@ RUN cmake \
   && make \
   && make install
 
-FROM ghcr.io/astral-sh/uv:python3.13-alpine3.23@sha256:b3590cdf03fc891859065e0b4878f88bb7570a8023b209b6d7783770e10d13fa
+FROM ghcr.io/astral-sh/uv:python3.13-alpine3.23@sha256:31a524210097e4f2d6f732d525cf9479c02ec966a0cd13f43ef71650ef3abf72
 ENV UV_SYSTEM_PYTHON=1 \
     EDITOR=vim \
     BEETSDIR=/config \
